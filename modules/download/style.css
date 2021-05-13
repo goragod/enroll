@@ -1,0 +1,44 @@
+.file_list div {
+  margin: 2px 5px;
+  position: relative;
+  float: left;
+}
+.file_list a {
+  color: inherit;
+}
+.file_list .preview {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+td>.file_list .preview {
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+}
+td>.file_list .preview>span {
+  font-size: 0.3em;
+}
+.file_list .icon-delete:before {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50em;
+  -moz-border-radius: 50em;
+  -webkit-border-radius: 50em;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  margin: 0;
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+td>.file_list .icon-delete:before {
+  display: none;
+}

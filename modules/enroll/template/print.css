@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "THSarabunNew";
+  src: url("../../../skin/fonts/thsarabunnew-webfont.eot");
+  src: url("../../../skin/fonts/thsarabunnew-webfont.eot?#iefix") format("embedded-opentype"), url("../../../skin/fonts/thsarabunnew-webfont.woff") format("woff"), url("../../../skin/fonts/thsarabunnew-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "THSarabunNew";
+  src: url("../../../skin/fonts/thsarabunnew_bolditalic-webfont.eot");
+  src: url("../../../skin/fonts/thsarabunnew_bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../../skin/fonts/thsarabunnew_bolditalic-webfont.woff") format("woff"), url("../../../skin/fonts/thsarabunnew_bolditalic-webfont.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "THSarabunNew";
+  src: url("../../../skin/fonts/thsarabunnew_italic-webfont.eot");
+  src: url("../../../skin/fonts/thsarabunnew_italic-webfont.eot?#iefix") format("embedded-opentype"), url("../../../skin/fonts/thsarabunnew_italic-webfont.woff") format("woff"), url("../../../skin/fonts/thsarabunnew_italic-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "THSarabunNew";
+  src: url("../../../skin/fonts/thsarabunnew_bold-webfont.eot");
+  src: url("../../../skin/fonts/thsarabunnew_bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../../skin/fonts/thsarabunnew_bold-webfont.woff") format("woff"), url("../../../skin/fonts/thsarabunnew_bold-webfont.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+body {
+  font-family: THSarabunNew, Tahoma, Loma, "Times New Roman", Times, serif;
+  width: 210mm;
+  margin: 0.5cm auto;
+  padding: 1cm;
+}
+body.landscape {
+  width: 297mm;
+}
+@media screen {
+  html {
+    background-color: rgb(0, 0, 0);
+  }
+  body {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  }
+  a.icon-print {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ddd;
+    font-size: 30px;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+    border-radius: 50em;
+    -moz-border-radius: 50em;
+    -webkit-border-radius: 50em;
+    text-decoration: none;
+  }
+  a.icon-print:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+  }
+  a.icon-print:before {
+    margin: 0;
+  }
+  #show_stamp {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+  }
+}
+@media print {
+  html,
+  body {
+    width: 210mm;
+  }
+  body.landscape {
+    width: 297mm
+  }
+  #show_stamp,
+  a.icon-print {
+    display: none;
+  }
+  .splitpage {
+    padding-top: 1cm;
+    page-break-before: always;
+  }
+}
